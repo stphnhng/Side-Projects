@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class ReverseAString {
+	private Scanner input;
+	
+	public ReverseAString(){
+		input = new Scanner(System.in);
+	}
+	
+	public static void main(String[]args){
+		System.out.print("Enter in string to be reversed: ");
+		String input = receiveInput();
+		System.out.println("Reversed string is: " + reverseString(input));
+	}
+	
+	public static String reverseString(String data){
+		String result = "";
+		for(int i = data.length()-1; i >= 0; i--){
+			result += data.charAt(i);
+		}
+		return result;
+	}
+	
+	public static String receiveInput(){
+		return input.nextLine();
+	}
+	
+}

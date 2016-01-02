@@ -1,0 +1,55 @@
+// Stephen Hung
+// 1/1/16
+// Program to reverse a user entered string and repeats if
+// the user decides to enter another string.
+
+import java.util.*;
+
+public class ReverseAString {
+	private static Scanner dataInput; // Scanner to receive input from user.
+	
+	// Constructor to initialize the Scanner
+	public ReverseAString(){
+		dataInput = new Scanner(System.in);
+	}
+	
+	public static void main(String[]args){
+		ReverseAString classObject = new ReverseAString();
+		boolean repeat = false;
+		do{
+			System.out.print("Enter in string to be reversed: ");
+			String input = dataInput.nextLine();
+			System.out.println("Reversed string is: " + classObject.reverseString(input));
+			repeat = classObject.repeatQuestion();
+		}while(repeat);
+	}
+	
+	// Asks the user whether or not he/she wants to enter another string to be reversed.
+	public boolean repeatQuestion(){
+		boolean repeat = false;
+		String answer = "";
+		do{
+			System.out.print("Would you like to reverse another string (Y/N) : ");
+			answer = dataInput.nextLine();
+			if(answer.equalsIgnoreCase("Y")){
+				return true;
+			}else if(answer.equalsIgnoreCase("N")){
+				return false;
+			}else{
+				repeat = true;
+			}
+		}while(repeat);
+		return false;
+	}
+	
+	// Reverses the string.
+	public  String reverseString(String data){
+		String result = "";
+		for(int i = data.length()-1; i >= 0; i--){
+			result += data.charAt(i);
+		}
+		return result;
+	}
+	
+	
+}

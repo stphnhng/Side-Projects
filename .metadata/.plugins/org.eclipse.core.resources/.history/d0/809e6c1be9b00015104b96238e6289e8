@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class ReverseAString {
+	
+	public static void main(String[]args){
+		System.out.println("Enter in string to be reversed: ");
+	}
+	
+	public String receiveInput(){
+		Scanner input = new Scanner(System.in);
+	}
+	
+}

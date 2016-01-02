@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class ReverseAString {
+	private static Scanner dataInput;
+	
+	public ReverseAString(){
+		dataInput = new Scanner(System.in);
+	}
+	
+	public static void main(String[]args){
+		ReverseAString classObject = new ReverseAString();
+		boolean repeat = false;
+		do{
+			System.out.print("Enter in string to be reversed: ");
+			String input = dataInput.next();
+			System.out.println("Reversed string is: " + classObject.reverseString(input));
+			System.out.print("Would you like to enter another string to be reversed? (Y/N) : ");
+			repeat = classObject.repeatQuestion();
+		}while(repeat);
+	}
+	
+	public boolean repeatQuestion(){
+		if(dataInput.next().equalsIgnoreCase("y")){
+			return true;
+		}else if(dataInput.next().equalsIgnoreCase("n")){
+			return false;
+		}else{
+			System.out.println();
+			System.out.print("Please enter 'Y' for yes and 'N' for no");
+			
+			return repeatQuestion();
+		}
+	}
+	
+	public  String reverseString(String data){
+		String result = "";
+		for(int i = data.length()-1; i >= 0; i--){
+			result += data.charAt(i);
+		}
+		return result;
+	}
+	
+	
+}
