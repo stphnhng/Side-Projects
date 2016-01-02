@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class CheckPalindrome {
+
+	
+	// Asks the user whether or not he/she wants to enter another string to be reversed.
+		public static boolean repeatQuestion(){
+			boolean repeat = false;
+			String answer = "";
+			do{
+				System.out.print("Would you like to reverse another string (Y/N) : ");
+				answer = input.nextLine();
+				if(answer.equalsIgnoreCase("Y")){
+					return true;
+				}else if(answer.equalsIgnoreCase("N")){
+					return false;
+				}else{
+					repeat = true;
+				}
+			}while(repeat);
+			return false;
+		}
+}

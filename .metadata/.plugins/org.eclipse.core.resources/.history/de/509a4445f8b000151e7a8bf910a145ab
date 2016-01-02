@@ -1,0 +1,27 @@
+// Stephen Hung
+// 1/1/16
+// Program that counts the number of vowels in a string and repeats if the user wants to
+// run the program again.
+
+import java.util.*;
+
+public class CountVowels {
+	private static Scanner input;
+	
+	public static void main(String[]args){
+		input = new Scanner(System.in);
+		System.out.print("Enter the String you want counted: ");
+		String data = input.nextLine();
+		System.out.println("The number of vowels in the String is: " + countVowels(data));
+	}
+	
+	public static int countVowels(String data){
+		int counter = 0;
+		for(int i = 0; i < data.length(); i++){
+			
+		}
+	}
+	
+	
+
+}

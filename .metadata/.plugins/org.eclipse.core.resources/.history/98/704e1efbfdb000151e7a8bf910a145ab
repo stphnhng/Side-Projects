@@ -1,0 +1,9 @@
+import java.util.*;
+
+public class CountWords {
+	private static Scanner input;
+	
+	public static void main(String[]args){
+		
+	}
+}
