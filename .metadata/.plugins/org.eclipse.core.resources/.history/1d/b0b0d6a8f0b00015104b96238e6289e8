@@ -1,0 +1,12 @@
+// Stephen Hung
+// 1/1/16
+// Program to turn user inputed Strings into Pig Latin.
+
+import java.util.*;
+
+public class PigLatin {
+
+	public static void main(String[]args){
+		
+	}
+}

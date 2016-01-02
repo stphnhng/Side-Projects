@@ -1,0 +1,26 @@
+// Stephen Hung
+// 1/1/16
+// Program to turn user inputed Strings into Pig Latin.
+
+import java.util.*;
+
+public class PigLatin {
+	private static Scanner input;
+	
+	public static void main(String[]args){
+		input = new Scanner(System.in);
+		System.out.print("Enter the String that you would like translated into Pig Latin: ");
+		String dataInput = input.nextLine();
+	}
+	
+	public static String translate(String data){
+		String result = "";
+		String temp = "";
+		Scanner lineReader = new Scanner(data);
+		while(lineReader.hasNext()){
+			
+		}
+		
+		return result;
+	}
+}
