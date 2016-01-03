@@ -27,3 +27,6 @@ and save text files to the local directory. As of right now, it cannot choose wh
 
 **Summarize Text**:
 Summarize an article or whatever String is passed into the program.
+
+**Post It Notes**:
+A program that lets the user write reminders which remind him in 1 second. **INCOMPLETE**
