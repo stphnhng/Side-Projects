@@ -1,0 +1,29 @@
+// Stephen Hung
+// 1/2/16
+// Program that lets the user write in reminders which will then eventually 
+// pop up and remind the user.
+
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
+public class PostIt {
+
+	public static void main(String[]args){
+		
+	}
+	
+	public static void createJFrame(){
+		JFrame f = new JFrame();
+		JPanel p = new JPanel();
+		JTextArea text = new JTextArea("Write reminders here...");
+		JButton post = new JButton("Save Reminder");
+		f.setContentPane(p);
+		p.add(text);
+		p.add(post,BorderLayout.SOUTH);
+	}
+	
+}
